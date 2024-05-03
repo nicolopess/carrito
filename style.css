@@ -4,7 +4,9 @@
 body{
     margin: 0;
     font-family: Poppins;
+    background-color: rgb(186, 131, 131);
 }
+
 .container{
     width: 900px;
     margin: auto;
@@ -57,7 +59,7 @@ header{
     gap: 20px;
 }
 .listProduct .item{
-    background-color: #EEEEE6;
+    background-color: #ef9797;
     padding: 20px;
     border-radius: 20px;
 }
@@ -154,11 +156,14 @@ body.showCart .container{
 body .footer{
 font-size: 1.5rem;
 text-align: center;
-background-color: gray;
+background-color: rgb(77, 75, 75);
 padding: 0.5rem;
 margin: 1rem;
 border-radius: 100%;
+
 }
+
+
 @media only screen and (max-width: 992px) {
     .listProduct{
         grid-template-columns: repeat(3, 1fr);
