@@ -180,6 +180,10 @@ border-radius: 100%;
     }
 }
 
+.total{
+font-size: 1.5rem;
+color: rgb(43, 255, 57);
+}
 
 /* mobile */
 @media only screen and (max-width: 768px) {
