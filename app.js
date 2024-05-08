@@ -4,6 +4,7 @@ let iconCart = document.querySelector(".icon-cart");
 let iconCartSpan = document.querySelector(".icon-cart span");
 let body = document.querySelector("body");
 let closeCart = document.querySelector(".close");
+let checkoutBtn = document.querySelector(".checkOut");
 let products = [];
 let cart = [];
 
@@ -65,7 +66,15 @@ const addToCart = (product_id) => {
 };
 
 function showAlert(message) {
-  alert(message);
+  let alertElement = document.createElement("div");
+  alertElement.textContent = message;
+  alertElement.classList.add("alert");
+
+  document.body.appendChild(alertElement);
+
+  setTimeout(() => {
+    alertElement.remove();
+  }, 3000);
 }
 
 const addCartToMemory = () => {
@@ -102,9 +111,9 @@ const addCartToHTML = () => {
                 </div>
                 <div class="totalPrice">$${subtotal}</div>
                 <div class="quantity">
-                    <span class="minus"><</span>
+                    <span class="minus">-</span>
                     <span>${item.quantity}</span>
-                    <span class="plus">></span>
+                    <span class="plus">+</span>
                 </div>`;
     });
   }
@@ -155,6 +164,13 @@ const changeQuantityCart = (product_id, type) => {
   addCartToHTML();
   addCartToMemory();
 };
+
+checkoutBtn.addEventListener("click", () => {
+  cart = [];
+  addCartToHTML();
+  addCartToMemory();
+  showAlert("¡Gracias por tu compra!");
+});
 
 const initApp = () => {
   fetch("products.json")
