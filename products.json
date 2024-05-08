@@ -17,9 +17,17 @@
     "price": 9000,
     "image": "image/3.jpg"
   },
+
+  {
+    "id": 13,
+    "name": "Hamburguesa Quintuple",
+    "price": 11000,
+    "image": "image/13.jpg"
+  },
+
   {
     "id": 4,
-    "name": " Papas Simples",
+    "name": " Papas simples con salsas",
     "price": 3000,
     "image": "image/4.jpg"
   },
@@ -29,6 +37,20 @@
     "price": 4000,
     "image": "image/5.jpg"
   },
+  {
+    "id": 14,
+    "name": "Papas con crema y verdeo",
+    "price": 4000,
+    "image": "image/14.jpg"
+  },
+
+  {
+    "id": 15,
+    "name": "Tequeños con 4 salsas",
+    "price": 6000,
+    "image": "image/15.jpg"
+  },
+
   {
     "id": 6,
     "name": " Coca-Cola",
@@ -47,6 +69,13 @@
     "price": 2000,
     "image": "image/8.jpeg"
   },
+  {
+    "id": 16,
+    "name": " Pinta de cerveza",
+    "price": 3000,
+    "image": "image/16.jpg"
+  },
+
   {
     "id": 9,
     "name": "Hamburguesa Vegana",

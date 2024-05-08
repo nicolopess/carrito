@@ -57,7 +57,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 .icon-cart{
     position: relative;
@@ -65,7 +65,7 @@ header{
 }
 .icon-cart span{
     position: absolute;
-    background-color: rgb(236, 2, 2);
+    background-color: rgb(243, 232, 24);
     width: 30px;
     height: 30px;
     display: flex;
@@ -73,13 +73,15 @@ header{
     align-items: center;
     border-radius: 50%;
     color: #000000;
-    top: 50%;
-    right: -20px;
+    top: 70%;
+    right: -10px;
 }
 .title{
     font-size: xx-large;
-    filter: drop-shadow(0 0px 20px #0009);
+    filter: drop-shadow(0 50px 20px rgba(55, 43, 43, 0.6));
+    
 }
+
 .listProduct .item img{
 width: 90%;
 filter: drop-shadow(0 50px 20px rgba(55, 43, 43, 0.6));
@@ -171,7 +173,7 @@ body.showCart .container{
     height: 25px;
     background-color: #eee;
     border-radius: 50%;
-    color: #555;
+    color: #000000;
     cursor: pointer;
 }
 .listCart .quantity span:nth-child(2){
@@ -180,7 +182,7 @@ body.showCart .container{
     cursor: auto;
 }
 .listCart .item:nth-child(even){
-    background-color: #eee1;
+    background-color: rgba(238, 238, 238, 0.312);
 }
 .listCart{
     overflow: auto;
@@ -191,7 +193,7 @@ body.showCart .container{
 body .footer{
 font-size: 2rem;
 text-align: center;
-padding: 0.5rem;
+padding: 1rem;
 margin: 1.5rem;
 }
 
@@ -252,23 +254,28 @@ color: rgb(43, 255, 57);
 
 /* mobile */
 @media only screen and (max-width: 768px) {
-    .listProduct{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    body .footer{
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    justify-content: space-between;
-    font-weight: 600;
-    }
-    .container header .logo{
-    width: 3.5rem;
+.listProduct{
+grid-template-columns: repeat(2, 1fr);
+}
+    
+body .footer{
+font-size: 1.2rem;
+justify-content: space-between;
+font-weight: 600;
+}
+.container header .logo{
+width: 3.5rem;
 }
 
 .title{
 font-size: 1.2rem;
 font-weight: 800;
 font-family: 'Courier New', Courier, monospace;
+}
 
+.container-footer{
+display: flex;
+align-items: center;
+padding: 1.5rem;
 }
 }
