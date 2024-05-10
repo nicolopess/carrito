@@ -67,14 +67,22 @@ const addToCart = (product_id) => {
 
 function showAlert(message) {
   let alertElement = document.createElement("div");
-  alertElement.textContent = message;
   alertElement.classList.add("alert");
 
-  document.body.appendChild(alertElement);
+  alertElement.innerHTML = `
+    <p>${message}</p>
+    <button class="acceptBtn">Aceptar</button>
+  `;
 
-  setTimeout(() => {
+  const closeAlert = () => {
     alertElement.remove();
-  }, 3000);
+  };
+
+  alertElement
+    .querySelector(".acceptBtn")
+    .addEventListener("click", closeAlert);
+
+  document.body.appendChild(alertElement);
 }
 
 const addCartToMemory = () => {
@@ -103,18 +111,18 @@ const addCartToHTML = () => {
 
       listCartHTML.appendChild(newItem);
       newItem.innerHTML = `
-                <div class="image">
-                    <img src="${info.image}">
-                </div>
-                <div class="name">
-                    ${info.name}
-                </div>
-                <div class="totalPrice">$${subtotal}</div>
-                <div class="quantity">
-                    <span class="minus">-</span>
-                    <span>${item.quantity}</span>
-                    <span class="plus">+</span>
-                </div>`;
+        <div class="image">
+          <img src="${info.image}">
+        </div>
+        <div class="name">
+          ${info.name}
+        </div>
+        <div class="totalPrice">$${subtotal}</div>
+        <div class="quantity">
+          <span class="minus">-</span>
+          <span>${item.quantity}</span>
+          <span class="plus">+</span>
+        </div>`;
     });
   }
   iconCartSpan.innerText = totalQuantity;
@@ -166,10 +174,14 @@ const changeQuantityCart = (product_id, type) => {
 };
 
 checkoutBtn.addEventListener("click", () => {
-  cart = [];
-  addCartToHTML();
-  addCartToMemory();
-  showAlert("¡Gracias por tu compra!");
+  if (cart.length === 0) {
+    showAlert("Aún no ha seleccionado ningún producto.");
+  } else {
+    cart = [];
+    addCartToHTML();
+    addCartToMemory();
+    showAlert("¡Gracias por tu compra!");
+  }
 });
 
 const initApp = () => {
