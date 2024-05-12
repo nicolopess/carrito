@@ -1,28 +1,54 @@
 [
   {
     "id": 1,
-    "name": " Hamburguesa Triple",
+    "name": " Hamburguesa Bob Esponja",
     "price": 7500,
     "image": "image/1.jpg"
   },
   {
     "id": 2,
-    "name": " Hamburguesa Bacon",
+    "name": " Hamburguesa Patricio",
     "price": 9000,
     "image": "image/2.jpg"
   },
   {
     "id": 3,
-    "name": " Hamburguesa Dorito",
+    "name": " Hamburguesa Don Cangrejo",
     "price": 9000,
     "image": "image/3.jpg"
   },
 
   {
     "id": 13,
-    "name": "Hamburguesa Quintuple",
+    "name": "Hamburguesa Calamardo",
     "price": 11000,
     "image": "image/13.jpg"
+  },
+
+  {
+    "id": 9,
+    "name": "Hamburguesa Vegana",
+    "price": 9500,
+    "image": "image/9.jpg"
+  },
+  {
+    "id": 10,
+    "name": " Hamburguesa de Pollo",
+    "price": 8000,
+    "image": "image/10.jpg"
+  },
+  {
+    "id": 11,
+    "name": " Porcion de rabas",
+    "price": 7000,
+    "image": "image/11.jpg"
+  },
+
+  {
+    "id": 12,
+    "name": " Milanesa con Papas Fritas",
+    "price": 8000,
+    "image": "image/12.jpg"
   },
 
   {
@@ -74,30 +100,5 @@
     "name": " Pinta de cerveza",
     "price": 3000,
     "image": "image/16.jpg"
-  },
-
-  {
-    "id": 9,
-    "name": "Hamburguesa Vegana",
-    "price": 9500,
-    "image": "image/9.jpg"
-  },
-  {
-    "id": 10,
-    "name": " Hamburguesa de Pollo",
-    "price": 8000,
-    "image": "image/10.jpg"
-  },
-  {
-    "id": 11,
-    "name": " Porcion de rabas",
-    "price": 7000,
-    "image": "image/11.jpg"
-  },
-  {
-    "id": 12,
-    "name": " Milanesa con Papas Fritas",
-    "price": 8000,
-    "image": "image/12.jpg"
   }
 ]
