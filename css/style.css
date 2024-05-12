@@ -141,7 +141,7 @@ justify-content: space-between;
 
 .cartTab{
     width: 400px;
-    background-image: url(/image/calamardo.jpg);
+    background-color: rgb(0, 0, 0);
     color: #eee;
     position: fixed;
     top: 0;
@@ -176,7 +176,7 @@ body.showCart .container{
     cursor: pointer;
 }
 .cartTab .close{
-    background-color: #eee;
+    background-color: #dbdbdbf0;
 }
 .listCart .item img{
     width: 100%;
@@ -192,7 +192,7 @@ body.showCart .container{
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     color: #000000;
     cursor: pointer;
@@ -203,7 +203,7 @@ body.showCart .container{
     cursor: auto;
 }
 .listCart .item:nth-child(even){
-    background-color: rgba(255, 250, 250, 0.574);
+    background-color: rgba(255, 250, 250, 0.804);
     color: black;
 }
 .listCart{
